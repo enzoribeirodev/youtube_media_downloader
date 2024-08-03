@@ -58,9 +58,9 @@ if __name__ == "__main__":
     while True:
         download_type = input('Digite "audio" para baixar música ou "video" para baixar vídeo: ').strip().lower()
 
-        if download_type not in ["audio", "video"]:
-            print('Opção inválida! Digite "audio" ou "video".')
-    
+        if download_type in ["audio", "video"]:
+            break
+        print('Opção inválida! Digite "audio" ou "video".')
     
     while True: 
         url = input("URL [apenas pressione enter para finalizar]: ").strip()
