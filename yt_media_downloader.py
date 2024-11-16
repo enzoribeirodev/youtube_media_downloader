@@ -21,9 +21,9 @@ def download_video(url, output_path):
 def download_audio(url, output_path):
     ydl_opts = {
         "format": "bestaudio/best",
-        "outtmpl": os.path.join(output_path, '%(title)s.%(ext)s'),
+        "outtmpl": os.path.join(output_path, "%(title)s.%(ext)s"),
         "postprocessors": [{
-            "key": 'FFmpegExtractAudio',
+            "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
             "preferredquality": "192",
         }],
